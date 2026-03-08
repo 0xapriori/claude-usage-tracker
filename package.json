@@ -1,0 +1,23 @@
+{
+  "name": "claude-usage-tracker",
+  "version": "1.0.0",
+  "description": "Track Claude Code token usage over time via OpenTelemetry metrics",
+  "main": "dist/cli.js",
+  "bin": {
+    "claude-usage": "./bin/claude-usage"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/collector.js",
+    "cli": "node dist/cli.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^22.0.0"
+  }
+}
