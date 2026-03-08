@@ -8,43 +8,40 @@ Works two ways:
 
 ```
 Claude Code Usage: Weekly Breakdown
-Jan 26 - Feb 1  →  Mar 2 - Mar 8
+Jun 2 - Jun 8  →  Jun 30 - Jul 6
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Totals
-  Input:                 196,226
-  Output:              1,127,183
-  Cache Read:        337,878,005
-  Cache Creation:     22,162,930
-  Total:             361,364,344
-  Sessions:                  148
+  Input:                 312,450
+  Output:              1,845,200
+  Cache Read:       85,420,000
+  Cache Creation:    6,230,500
+  Total:            93,808,150
+  Sessions:                   72
 
 Week              Tokens      Out       Sessions  Chart
 ──────────────────────────────────────────────────────────────────────────────
-  Jan 26 - Feb 1       15.2M       16K       1    ███
-  Feb 2 - Feb 8        50.6M      133K       2    █████████
-  Feb 9 - Feb 15        2.2M        3K      95    █
-  Feb 16 - Feb 22       280K        2K       1    █
-  Feb 23 - Mar 1       90.3M      267K      21    ████████████████
-  Mar 2 - Mar 8       202.8M      706K      28    ███████████████████████████████████
+  Jun 2 - Jun 8        12.4M       95K       8    ██████████
+  Jun 9 - Jun 15       18.7M      280K      14    ███████████████
+  Jun 16 - Jun 22       8.3M      120K       9    ██████
+  Jun 23 - Jun 29      24.1M      510K      22    ████████████████████
+  Jun 30 - Jul 6       30.3M      840K      19    █████████████████████████
 
 Weekly Token Usage
 ──────────────────────────────────────────────────────────────────────────────
-  Jan 26  │████ 15.2M
-  Feb  2  │██████████████ 50.6M
-  Feb  9  │█ 2.2M
-  Feb 16  │█ 280K
-  Feb 23  │████████████████████████ 90.3M
-  Mar  2  │███████████████████████████████████████████████████████ 202.8M
+  Jun  2  │██████████████████████ 12.4M
+  Jun  9  │████████████████████████████████ 18.7M
+  Jun 16  │██████████████ 8.3M
+  Jun 23  │██████████████████████████████████████████ 24.1M
+  Jun 30  │███████████████████████████████████████████████████████ 30.3M
 
 Weekly Output Tokens (Claude responses)
 ──────────────────────────────────────────────────────────────────────────────
-  Jan 26  │█ 16K
-  Feb  2  │██████████ 133K
-  Feb  9  │█ 3K
-  Feb 16  │█ 2K
-  Feb 23  │█████████████████████ 267K
-  Mar  2  │███████████████████████████████████████████████████████ 706K
+  Jun  2  │██████ 95K
+  Jun  9  │██████████████████ 280K
+  Jun 16  │███████ 120K
+  Jun 23  │█████████████████████████████████ 510K
+  Jun 30  │███████████████████████████████████████████████████████ 840K
 ```
 
 ## Install
@@ -146,29 +143,31 @@ The collector receives OpenTelemetry metrics from Claude Code and writes them to
 The standard report shows:
 
 ```
-Claude Code Usage: Mar 1-7, 2026
+Claude Code Usage: Jun 23-29, 2025
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Tokens
-  Input:            1,245,000
-  Output:             432,000
-  Cache Read:         890,000
-  Cache Creation:     156,000
-  Total:            2,723,000
+  Input:              142,500
+  Output:             510,200
+  Cache Read:      18,340,000
+  Cache Creation:   1,420,000
+  Total:           20,412,700
 
 Cost
-  Total:               $12.45
+  Total:                $8.35
 
 By Model
-  claude-opus-4-6        1,890,000 tokens  $9.20
-  claude-sonnet-4-6        833,000 tokens  $3.25
+  claude-opus-4-6       14,850,000 tokens  $6.10
+  claude-sonnet-4-6      5,562,700 tokens  $2.25
 
 By Day
-  Mar 1 (Sat)     245,000 tokens  $1.10
-  Mar 2 (Sun)     380,000 tokens  $1.80
-  ...
+  Jun 23 (Mon)   2,180,000 tokens  $0.90
+  Jun 24 (Tue)   4,520,000 tokens  $1.85
+  Jun 25 (Wed)   3,870,000 tokens  $1.60
+  Jun 26 (Thu)   5,210,000 tokens  $2.15
+  Jun 27 (Fri)   4,632,700 tokens  $1.85
 
-Sessions: 14
+Sessions: 22
 ```
 
 Token types:
